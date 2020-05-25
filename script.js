@@ -18,6 +18,6 @@ var checkDead = setInterval(
             block.style.animation = "none";
             block.style.display = "none";
             console.log(`Left block is: ${blockLeft} and characterTop is: ${characterTop}`);
-            alert('you lose!');
+            //alert('you lose!');
         }
     }, 10);

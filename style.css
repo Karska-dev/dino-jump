@@ -10,11 +10,10 @@
 }
 
 #character {
-    width: 20px;
-    height: 50px;
-    background-color: green;
+    width: 64px;
+    height: 64px;
     position: relative;
-    top: 150px;
+    top: 138px;
     left: 145px
 }
 
@@ -23,18 +22,17 @@
 }
 
 @keyframes jump {
-    0%{top: 150px;}
+    0%{top: 140px;}
     50%{top: 80px;}
     70%{top: 80px;}
-    100%{top: 150px;}
+    100%{top: 140px;}
 }
 
 #block {
-    width: 20px;
-    height: 20px;
-    background-color: orange;
+    width: 40px;
+    height: 40px;
     position: relative;
-    top: 130px;
+    top: 137px;
     left: 480px;
     animation: block 3s infinite;
 }
@@ -42,4 +40,10 @@
 @keyframes block {
     0%{left:480px;}
     100%{left:-40px;}
+}
+
+#ref {
+    margin-left: 5px;
+    color: gray;
+    font-size: 11px;
 }
