@@ -12,11 +12,11 @@ var checkDead = setInterval(
     function () {
         var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue('top'));
         var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue('left'));
-        if (blockLeft<165 && 
-            blockLeft>145 &&
-            characterTop>=130){
+        if (blockLeft<141 && 
+            blockLeft>75 &&
+            characterTop>=95){
             block.style.animation = "none";
-            block.style.display = "none";
+            //block.style.display = "none";
             console.log(`Left block is: ${blockLeft} and characterTop is: ${characterTop}`);
             //alert('you lose!');
         }

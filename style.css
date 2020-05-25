@@ -4,9 +4,9 @@
 }
 
 #game {
-    width: 500px;
+    width: 600px;
     height: 200px;
-    border: 1px solid black;
+    border: 3px solid black;
 }
 
 #character {
@@ -14,17 +14,19 @@
     height: 64px;
     position: relative;
     top: 138px;
-    left: 145px
+    left: 145px;
 }
 
 .animate {
-    animation: jump 750ms;
+    animation: jump 950ms;
 }
 
 @keyframes jump {
     0%{top: 140px;}
+    1%{top: 94px;}
+    5%{top: 90px;}
+    10%{top: 85px;}
     50%{top: 80px;}
-    70%{top: 80px;}
     100%{top: 140px;}
 }
 
@@ -33,13 +35,13 @@
     height: 40px;
     position: relative;
     top: 137px;
-    left: 480px;
+    left: 490px;
     animation: block 3s infinite;
 }
 
 @keyframes block {
-    0%{left:480px;}
-    100%{left:-40px;}
+    0%{left:560px;}
+    100%{left:-104px;}
 }
 
 #ref {
